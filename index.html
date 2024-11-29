@@ -1,13 +1,21 @@
+<!-- Laboratorio 1, Construcción de una Página Web Básica Personal con HTML y Uso de Git (PGR-B)).pdf -->
+
+<!-- Paso 1. Crear la estructura básica del documento HTML-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Página WEB simple</title>
 </head>
+
+<!--  Paso 2. Añadir encabezados y párrafos -->
 <body>
     <header>
         <h1> Bienvenido a mi sitio web</h1>
-        <h2> Es muy intereante aprender Git y GitHub</h2>
+        <h3> Es muy interesante aprender Git y GitHub</h3>
+        <!--    Paso 3. Insertar una imagen y añadir enlaces.-->
+        <img src="Git_y_GitHub.png" alt="Git_y_GitHub.png" width="200">
     </header>
     <main>
         <section>
@@ -16,15 +24,95 @@
             <p> Me tocó estudiar GitHub por mi cuenta dado que no le entendí al profesor y habian muchos avanzados que ya sabian</p>
         </section>
         <section>
+            <!--    Paso 4. Crear listas y tablas.-->
             <h2> Proyectos</h2>
             <ul>
                 <li> Proyecto 01</li>
                 <li> Proyecto 02</li>
+                <li> Proyecto 03</li>
             </ul>
+            <h2> Tareas</h2>
+            <ol>
+                <li> Tarea 01</li>
+                <li> Tarea 02</li>
+                <li> Tarea 03</li>
+            </ol>
+            <h2> Tabla HTML</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Horario</th>
+                        <th> Lunes</th>
+                        <th> Martes</th>
+                        <th> Miércoles</th>
+                        <th> Jueves</th>
+                        <th> Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th> 8am</th>
+                        <td> Matemáticas</td>
+                        <td> Física</td>
+                        <td> Matemáticas</td>
+                        <td> Física</td>
+                        <td> Matemáticas</td>
+                    </tr>
+                    <tr>
+                        <th> 9am</th>
+                        <td> Matemáticas</td>
+                        <td> Física</td>
+                        <td> Matemáticas</td>
+                        <td> Física</td>
+                        <td> Matemáticas</td>
+                    </tr>
+                    <tr>
+                        <th> 10am</th>
+                        <td> Biologia</td>
+                        <td> Geografía</td>
+                        <td> Historia</td>
+                        <td> Filosofía</td>
+                        <td> Ética</td>
+                    </tr>
+                    <tr>
+                        <th> 11am</th>
+                        <td> Biologia</td>
+                        <td> Geografía</td>
+                        <td> Historia</td>
+                        <td> Filosofía</td>
+                        <td> Ética</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th colspan="6"> Nota: La tabla es un ejemplo de un horario de clases, usando las etiquetas thead, tbody, tr, th, y td</th>
+                </tfoot>
+            </table>
+            <br>
+        </section>
+        <!--    Paso 6. Crear un formulario de contacto.-->
+        <section>
+            <form>
+                <h2> Formulario HTML</h2>
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br><br>
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <br><br>
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                </fieldset>
+                <br>
+                <button type="submit">Registrarse</button>
+            </form>
         </section>
     </main>
     <footer>
         <p> Contacto: oscar.granadosd@gmail.com</p>
+        <a href="https://www.linkedin.com/in/oscar-granados-delgado/"> <button> Visita LKN: oscar-granados-delgado</button> </a> 
     </footer>
     <script src="script.js"></script> 
 </body>
